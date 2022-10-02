@@ -29,7 +29,7 @@ app.use(xss());
 // API Routes
 app.use("/api/v1/foodCategories", foodCategoryRoutes);
 app.use("/api/v1/foodItems", foodItemRoutes);
-app.use("/api/v1/orders", requireAuth, orderRoutes);
+app.use("/api/v1/orders", orderRoutes);
 app.use("/api/v1/users", userRoutes);
 app.use(notFound);
 
